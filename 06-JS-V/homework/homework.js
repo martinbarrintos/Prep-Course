@@ -8,16 +8,16 @@ function crearUsuario() {
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
   // Tu código:
+  function Usuario (opciones){
   this.usuario = opciones.usuario
     this.nombre = opciones.nombre
     this.email = opciones.email
     this.password = opciones.password
   }
-
   Usuario.prototype.saludar = function() {
     return 'Hola, mi nombre es ' + this.nombre
   }
-
+} return Usuario
 
 function agregarMetodoPrototype(Constructor) {
   // Agrega un método al Constructor del `prototype`
@@ -51,19 +51,17 @@ function agregarStringInvertida() {
     //  }
 
   class Persona {
-    constructor(/*Escribir los argumentos que recibe el constructor*/) {
-      // Crea el constructor:
+    constructor(Persona) {
       constructor(nombre, apellido, edad, domicilio){
-        // Tu código:
-        this.nombre = nombre,
-        this.apellido = apellido,
-        this.edad = edad,
+        this.nombre = nombre
+        this.apellido = apellido
+        this.edad = edad
         this.domicilio = domicilio
         this.detalle = function() {
           return { 
-            Nombre: this.nombre,
-            Apellido: this.apellido,
-            Edad: this.edad,
+            Nombre: this.nombre
+            Apellido: this.apellido
+            Edad: this.edad
             Domicilio: this.domicilio
           }
         }
@@ -81,6 +79,13 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
 function agregarMetodo() {
   //La función agrega un método "datos" a la clase Persona que toma el nombre y la edad de la persona y devuelve: 
   //Ej: "Juan, 22 años"
+   function(Persona) {
+		var datos = (nombre, edad)
+    this.nombre= Juan
+    this.edad=22
+		 Persona = new Persona(Juan, 22)
+		return Persona.datos
+	}
 }
   
 
