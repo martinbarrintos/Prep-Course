@@ -73,6 +73,21 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
   //Devolver la nueva persona creada
+  class Persona {
+    function(nombre, apellido, edad, domicilio){
+        this.nombre = "Juan"
+        this.apellido = "Perez"
+        this.edad = "22"
+        this.domicilio = "Saavedra 123"
+          return { 
+            Nombre: this.nombre
+            Apellido: this.apellido
+            Edad: this.edad
+            Domicilio: this.domicilio
+          }
+        }
+      }
+    }
  
 }
   
